@@ -10,14 +10,30 @@ overflow-x: hidden;
 .navbar
 {
 display: flex;
-justify-content: center;
-align-items: center;
+
 
 background-color: #A1CDE3;
 max-height: 10vh;
 }
 
+.nav {
+
+display: flex;
+justify-content: space-between;
+justify-items: center;
+
+}
+
 .navbar img {
     
     scale: 0.1;
+}
+.logo 
+{
+    position: relative;
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    
 }
