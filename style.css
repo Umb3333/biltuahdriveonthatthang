@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body
+{
+font-family: 'Open Sans', sans-serif;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+.navbar
+{
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-color: #A1CDE3;
+max-height: 10vh;
+}
+
+.navbar img {
+    
+    scale: 0.1;
+}
