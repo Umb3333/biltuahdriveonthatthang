@@ -24,9 +24,18 @@ justify-items: center;
 
 }
 
+.nav li {
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: end;
+    gap: 20vw;
+}
+
 .navbar img {
-    
-    scale: 0.1;
+    display: inherit;
+    justify-content: start;
+    max-height: 9vh; 
 }
 .logo 
 {
@@ -35,5 +44,6 @@ justify-items: center;
     align-items: start;
     display: flex;
     flex-direction: column;
+    max-width: 20vh;
     
 }
