@@ -145,6 +145,20 @@ margin-left: 3vw;
     border-radius: 10%;
     border-style: hidden;
     box-shadow: 100vh 100vh 100vh;
+
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.showcaseButton a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.showcaseButton:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 @keyframes openingAnim {
