@@ -10,6 +10,7 @@ body {
   justify-content: flex-start; /* Aligns items to the left */
   gap: 20px; /* Adjusts the space between items */
   padding: 20px; /* Adds padding around the container */
+  border-color: #000;
 }
 
 .card {
@@ -17,6 +18,7 @@ body {
   max-width: 600px; /* Maximum width of the card */
   background-color: white; /* Sets the card's background to white */
   border-radius: 15px; /* Rounds the corners of the card */
+  border-color: #000;
 }
 
 .card img {
@@ -30,6 +32,7 @@ body {
   padding: 15px;
   border-bottom-left-radius: 15px; /* Rounds the bottom-left corner of the content */
   border-bottom-right-radius: 15px; /* Rounds the bottom-right corner of the content */
+  border-color: #000;
 }
 
 .card h2 {
@@ -54,4 +57,46 @@ button {
 
 button:hover {
   background-color: darkred;
+}
+
+.navbar
+{
+display: flex;
+align-self: flex-start;
+position: absolute;
+
+
+
+background-color: #A1CDE3;
+top: 0px;
+min-width: 100%;
+max-height: 10vh;
+}
+
+.nav {
+
+display: block ruby;
+margin-left: 10%;
+text-decoration: none;
+
+
+}
+
+.nav a {
+
+text-decoration: none;
+color: rgb(44, 44, 44);
+font-size: 200%;
+padding-top: 40%;
+margin-left: 3vw;
+
+}
+
+
+
+.navbar img {
+    display: inherit;
+    justify-content: start;
+    max-height: 9vh; 
+    
 }
