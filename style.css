@@ -10,6 +10,8 @@ overflow-x: hidden;
 .navbar
 {
 display: flex;
+align-self: flex-start;
+
 
 
 background-color: #A1CDE3;
@@ -18,24 +20,30 @@ max-height: 10vh;
 
 .nav {
 
-display: flex;
-justify-content: space-between;
-justify-items: center;
+display: block ruby;
+margin-left: 10%;
+text-decoration: none;
+
 
 }
 
-.nav li {
+.nav a {
 
-    display: flex;
-    justify-content: space-between;
-    justify-items: end;
-    gap: 20vw;
+text-decoration: none;
+color: rgb(44, 44, 44);
+font-size: 200%;
+padding-top: 40%;
+margin-left: 3vw;
+
 }
+
+
 
 .navbar img {
     display: inherit;
     justify-content: start;
     max-height: 9vh; 
+    
 }
 .logo 
 {
@@ -46,4 +54,25 @@ justify-items: center;
     flex-direction: column;
     max-width: 20vh;
     
+}
+
+.models 
+{
+    display: grid;
+    justify-content: column ;
+    align-items: center;
+    margin-top: 10%;
+    
+}
+
+
+.models img 
+{
+    max-width: 50%;
+    max-height: 50vh;
+}
+
+#MainCar {
+    min-width: 100vw;
+    min-height: -moz-available;
 }
