@@ -75,12 +75,14 @@ margin-left: 3vw;
     max-width: 100vw;
     max-height: 100vh;
     border-radius: 10%;
+    
 }
 
 #MainCar {
     min-width: 100vw;
     min-height: 100vh;
     z-index: 1;
+    box-shadow: 10px 20px 100px;
 }
 
 #cargif {
@@ -100,8 +102,18 @@ margin-left: 3vw;
     color: rgb(182, 182, 182);
     z-index: 2;
     text-decoration: underline;
-   
-    
 }
 
+.showcaseButton {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 200%;
+    min-width: 10vw;
+    min-height: 7vh;
+    background-color: #548096;
+    border-radius: 10%;
+    border-style: hidden;
+    box-shadow: 100vh 100vh 100vh;
+}
 
