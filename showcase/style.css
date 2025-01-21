@@ -10,6 +10,7 @@ body {
   justify-content: flex-start; /* Aligns items to the left */
   gap: 20px; /* Adjusts the space between items */
   padding: 20px; /* Adds padding around the container */
+  border-color: #000;
 }
 
 .card {
@@ -17,6 +18,7 @@ body {
   max-width: 600px; /* Maximum width of the card */
   background-color: white; /* Sets the card's background to white */
   border-radius: 15px; /* Rounds the corners of the card */
+  border-color: #000;
 }
 
 .card img {
@@ -30,6 +32,7 @@ body {
   padding: 15px;
   border-bottom-left-radius: 15px; /* Rounds the bottom-left corner of the content */
   border-bottom-right-radius: 15px; /* Rounds the bottom-right corner of the content */
+  border-color: #000;
 }
 
 .card h2 {
