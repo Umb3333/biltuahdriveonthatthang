@@ -5,16 +5,20 @@ body
 font-family: 'Open Sans', sans-serif;
 overflow-y: scroll;
 overflow-x: hidden;
+background-color: #548096;
 }
 
 .navbar
 {
 display: flex;
 align-self: flex-start;
+position: absolute;
 
 
 
 background-color: #A1CDE3;
+top: 0px;
+min-width: 100%;
 max-height: 10vh;
 }
 
@@ -56,7 +60,7 @@ margin-left: 3vw;
     
 }
 
-.models 
+.container 
 {
     display: grid;
     justify-content: column ;
@@ -66,13 +70,38 @@ margin-left: 3vw;
 }
 
 
-.models img 
+.container img 
 {
-    max-width: 50%;
-    max-height: 50vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 10%;
 }
 
 #MainCar {
     min-width: 100vw;
     min-height: 100vh;
+    z-index: 1;
 }
+
+#cargif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80vw;
+    min-height: 80vh;
+     
+}
+
+.showcaseH {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    font-size: 320%;
+    color: rgb(182, 182, 182);
+    z-index: 2;
+    text-decoration: underline;
+   
+    
+}
+
+

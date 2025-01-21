@@ -1,58 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .card.full-width {
-    grid-column: span 2;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card .content {
-    padding: 15px;
-  }
-  
-  .card h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-  
-  .card p {
-    color: gray;
-    margin: 5px 0;
-  }
-  
-  button {
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    margin: 10px 5px 0 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: darkred;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  gap: 20px; /* Adjusts the space between items */
+  padding: 20px; /* Adds padding around the container */
+}
+
+.card {
+  width: 100%;
+  max-width: 600px; /* Maximum width of the card */
+  background-color: white; /* Sets the card's background to white */
+  border-radius: 15px; /* Rounds the corners of the card */
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Maintains the aspect ratio */
+  border-top-left-radius: 15px; /* Rounds the top-left corner of the image */
+  border-top-right-radius: 15px; /* Rounds the top-right corner of the image */
+}
+
+.card .content {
+  padding: 15px;
+  border-bottom-left-radius: 15px; /* Rounds the bottom-left corner of the content */
+  border-bottom-right-radius: 15px; /* Rounds the bottom-right corner of the content */
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card p {
+  color: gray;
+  margin: 5px 0;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 5px 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
