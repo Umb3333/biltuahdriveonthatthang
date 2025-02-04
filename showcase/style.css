@@ -70,20 +70,20 @@ button:hover {
   background-color: darkred;
 }
 
-.navbar
-{
-display: flex;
-align-self: flex-start;
-position: absolute;
+.navbar {
+  display: flex;
+  align-self: flex-start;
+  position: fixed; /* Changed from absolute to fixed */
+  top: 0;
+  left: 0; /* Ensures it sticks to the left edge */
+  min-width: 100%;
+  max-height: 10vh;
+  z-index: 1000; /* Ensures it stays on top of other content */
 
-
-
-background: rgb(125,157,172);
-background: linear-gradient(0deg, rgba(125,157,172,1) 0%, rgba(85,104,112,1) 0%, rgba(131,152,152,1) 48%, rgba(85,104,112,1) 100%, rgba(125,157,172,1) 100%); 
-top: 0px;
-min-width: 100%;
-max-height: 10vh;
+  background: rgb(125,157,172);
+  background: linear-gradient(0deg, rgba(125,157,172,1) 0%, rgba(85,104,112,1) 0%, rgba(131,152,152,1) 48%, rgba(85,104,112,1) 100%, rgba(125,157,172,1) 100%); 
 }
+
 
 .nav {
 
@@ -125,4 +125,13 @@ margin-left: 3vw;
     justify-content: start;
     max-height: 9vh; 
     
+}
+
+.allcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 14vh; /* Adjust as needed based on navbar height */
+  gap: 3vh;
 }
