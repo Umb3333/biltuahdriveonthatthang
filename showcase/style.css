@@ -1,8 +1,117 @@
-body {
-  font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --primary-bg: #548096;
+  --nav-gradient-start: #556870;
+  --nav-gradient-middle: #839898;
+  --text-light: #b1b4b6;
+  --shadow-color: rgb(37, 37, 37);
+  --transition-speed: 0.5s;
+}
+
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #548096;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--primary-bg);
+  animation: openingAnim 1s ease-in-out;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Typography Classes */
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tinos-bold-italic {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(
+    0deg,
+    var(--nav-gradient-start) 0%,
+    var(--nav-gradient-middle) 48%,
+    var(--nav-gradient-start) 100%
+  );
+}
+
+.logo {
+  flex-shrink: 0;
+  width: auto;
+  max-width: 150px;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--text-light);
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 .allcontainer {
@@ -68,69 +177,6 @@ button {
 
 button:hover {
   background-color: darkred;
-}
-
-.navbar {
-  display: flex;
-  align-self: flex-start;
-  position: fixed; /* Changed from absolute to fixed */
-  top: 0;
-  left: 0; /* Ensures it sticks to the left edge */
-  min-width: 100%;
-  max-height: 10vh;
-  z-index: 1000; /* Ensures it stays on top of other content */
-
-  background: rgb(125,157,172);
-  background: linear-gradient(0deg, rgba(125,157,172,1) 0%, rgba(85,104,112,1) 0%, rgba(131,152,152,1) 48%, rgba(85,104,112,1) 100%, rgba(125,157,172,1) 100%); 
-}
-
-
-.nav {
-
-display: block ruby;
-margin-left: 10%;
-text-decoration: none;
-
-
-}
-
-.nav a {
-
-text-decoration: none;
-color: rgb(44, 44, 44);
-font-size: 200%;
-padding-top: 0%;
-margin-left: 3vw;
-
-}
-
-.nav li {
-  display: flex;
-  width: fit-content;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  float: left;
-  gap: 1vw;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-
-
-.navbar img {
-    display: inherit;
-    justify-content: start;
-    max-height: 9vh; 
-    
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #000; /* Default text color */
-    transition: color 0.3s ease-in-out;
 }
 
 .allcontainer {
