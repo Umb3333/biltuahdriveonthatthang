@@ -127,6 +127,12 @@ margin-left: 3vw;
     
 }
 
+.nav ul li a {
+    text-decoration: none;
+    color: #000; /* Default text color */
+    transition: color 0.3s ease-in-out;
+}
+
 .allcontainer {
   display: flex;
   justify-content: center;
@@ -134,4 +140,14 @@ margin-left: 3vw;
   flex-direction: column;
   padding-top: 14vh; /* Adjust as needed based on navbar height */
   gap: 3vh;
+}
+
+.huvud{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
 }
