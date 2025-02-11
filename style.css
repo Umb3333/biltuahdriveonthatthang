@@ -169,6 +169,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform var(--transition-speed) ease;
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -206,9 +207,40 @@ body {
   transition: transform var(--transition-speed) ease;
 }
 
-#cargif:hover,
-#car3:hover {
-  transform: scale(1.02);
+
+
+
+.abouttext {
+  position: absolute;
+  z-index: 5;
+  top: 60%;
+  left: 52%;
+  size: 50%;
+}
+
+.aboutButton {
+  position: absolute;
+  top: 63%;
+  left: 52%;
+  padding: 1rem 2rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  background-color: var(--primary-bg);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed) ease;
+  
+}
+
+.aboutButton a {
+  cursor: pointer;
+  color: var(--text-light);
+  text-decoration: none;
+}
+.aboutButton:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
 }
 
 /* Animations */
