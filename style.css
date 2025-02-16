@@ -263,6 +263,12 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  html, body {overflow-x:hidden;}
   .navbar {
     flex-direction: column;
     padding: 0.5rem;
@@ -283,7 +289,8 @@ footer {
   .showcaseH {
     text-align: center;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-4vh);
+    width: max-content;
   }
 
   .showcaseButton {
@@ -297,5 +304,32 @@ footer {
 
   .other {
     grid-template-columns: 1fr;
+  }
+  .showcaseButton {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    background-color: var(--primary-bg);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .aboutButton {
+    position: absolute;
+    top: 66%;
+    left: 13%;
+    padding: 1rem 2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    background-color: var(--primary-bg);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease;
+    
   }
 }
