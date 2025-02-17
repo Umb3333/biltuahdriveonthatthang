@@ -172,15 +172,11 @@ body {
   text-decoration: none;
 }
 
-
-
-
 .showcaseButton:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
-  
 
 .showcaseButton a {
   text-decoration: none;
@@ -189,11 +185,14 @@ body {
 
 /* Other Cars Section */
 .other {
-  width: 100%;
+  width: fit-content;
   max-width: 1400px;
   margin: 2rem auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: inline-flex;
+  columns: 2;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr); /* Changed to 3 fixed columns */
   gap: 2rem;
   padding: 1rem;
 }
@@ -207,9 +206,6 @@ body {
   transition: transform var(--transition-speed) ease;
 }
 
-
-
-
 .abouttext {
   position: absolute;
   z-index: 5;
@@ -218,18 +214,25 @@ body {
   size: 50%;
 }
 
+.carimgbutton {
+  position:relative
+}
+
 .aboutButton {
   position: absolute;
-  top: 63%;
-  left: 52%;
+  margin: auto;
+  inset: 1 0 0 0;
+  top: 1em;
+  left: .5em;     
+  
   padding: 1rem 2rem;
   font-size: clamp(1rem, 2vw, 1.5rem);
   background-color: var(--primary-bg);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed) ease;
   
+  z-index: 2; 
 }
 
 .aboutButton a {
@@ -237,6 +240,7 @@ body {
   color: var(--text-light);
   text-decoration: none;
 }
+
 .aboutButton:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
@@ -303,7 +307,7 @@ footer {
   }
 
   .other {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Changes to single column on mobile */
   }
   .showcaseButton {
     position: absolute;
