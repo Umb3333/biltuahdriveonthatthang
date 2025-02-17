@@ -4,7 +4,7 @@
 
 /* CSS Variables */
 :root {
-  --primary-bg: #548096;
+  --primary-bg: #293e49;
   --nav-gradient-start: #556870;
   --nav-gradient-middle: #839898;
   --text-light: #b1b4b6;
@@ -126,6 +126,21 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+
+  
+ 
+}
+
+@keyframes scrollanim {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Showcase Section */
@@ -195,6 +210,9 @@ body {
   grid-template-columns: repeat(3, 1fr); /* Changed to 3 fixed columns */
   gap: 2rem;
   padding: 1rem;
+  animation: scrollanim 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
 }
 
 #cargif,
@@ -204,6 +222,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition-speed) ease;
+}
+#car3 {
+  object-fit:cover ;
+  height: 68vh;
+  width: 100%;
 }
 
 .abouttext {
