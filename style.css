@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  /* background color controlled by variable color*/
   background-color: var(--primary-bg);
   animation: openingAnim 1s ease-in-out;
   overflow-x: hidden;
@@ -66,6 +67,7 @@ body {
   width: 100%;
   padding: 1rem;
   background: linear-gradient(
+    /*gradient controlled by variable colors*/
     0deg,
     var(--nav-gradient-start) 0%,
     var(--nav-gradient-middle) 48%,
