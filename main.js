@@ -12,8 +12,9 @@ function autoplay () {
 
 
 window.addEventListener('scroll', () => {
+                                 
+  //set the value of --scroll to the scroll position of the page
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-if ('--scroll' <= 1){
-  'scroll' - 0.1;
-}
+
+  
 }, false);
