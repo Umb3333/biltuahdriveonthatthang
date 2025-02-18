@@ -9,7 +9,7 @@ function autoplay () {
  videoplayer.play();
 
 }
-
+const reddiv = document.querySelector('.reddiv');
 
 window.addEventListener('scroll', () => {
                                  
