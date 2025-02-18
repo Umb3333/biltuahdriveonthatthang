@@ -14,7 +14,7 @@
     .navbar{
         display: flex;
         align-self: flex-start;
-      position: sticky;
+        position: sticky;
 
         background: rgb(125,157,172);
         background: linear-gradient(0deg, rgba(125,157,172,1) 0%, rgba(85,104,112,1) 0%, rgba(131,152,152,1) 48%, rgba(85,104,112,1) 100%, rgba(125,157,172,1) 100%); 
