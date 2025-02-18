@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  /* background color controlled by variable color*/
   background-color: var(--primary-bg);
   animation: openingAnim 1s ease-in-out;
   overflow-x: hidden;
@@ -66,6 +67,7 @@ body {
   width: 100%;
   padding: 1rem;
   background: linear-gradient(
+    /*gradient controlled by variable colors*/
     0deg,
     var(--nav-gradient-start) 0%,
     var(--nav-gradient-middle) 48%,
@@ -200,6 +202,7 @@ body {
 
 /* Other Cars Section */
 .other {
+  overflow-y: hidden;
   width: fit-content;
   max-width: 1400px;
   margin: 2rem auto;
@@ -274,6 +277,7 @@ footer {
   text-align: center;
   background-color: #2a3337;
   padding: 2em;
+  margin-top: 20%;
 }
 
 /* Animations */
@@ -360,3 +364,13 @@ footer {
     
   }
 }
+
+
+.aboutus {
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

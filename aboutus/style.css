@@ -3,7 +3,18 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color: var(--primary-bg);
+        width: 100%;
     }
+
+    :root {
+        --primary-bg: #293e49;
+        --nav-gradient-start: #556870;
+        --nav-gradient-middle: #839898;
+        --text-light: #b1b4b6;
+        --shadow-color: rgb(37, 37, 37);
+        --transition-speed: 0.5s;
+      }
 
     header {
         background-color: #333;
@@ -72,3 +83,4 @@
         width: 100%;
         bottom: 0;
     }
+
