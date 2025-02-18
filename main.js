@@ -13,4 +13,7 @@ function autoplay () {
 
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+if ('--scroll' <= 1){
+  'scroll' - 0.1;
+}
 }, false);
