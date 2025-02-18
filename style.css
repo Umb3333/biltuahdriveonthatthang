@@ -200,6 +200,7 @@ body {
 
 /* Other Cars Section */
 .other {
+  overflow-y: hidden;
   width: fit-content;
   max-width: 1400px;
   margin: 2rem auto;
